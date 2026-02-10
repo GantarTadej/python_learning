@@ -13,11 +13,20 @@ Analiza pogostosti besed v tekstovnih datotekah s filtriranjem stop besed.
 
 [Več →](./word-frequency/README.md)
 
+### 2. Data Structures Applied
+Kako, zakaj, kdaj...kako..why.. O Data structures
+
+**Lokacija:** `data-structures-applied/`  
+**Status:** In Progress
+**Naučeno:** Lists, Dict Razlike
+
+[Več →](./data-structures-applied/README.md)
+
+
 ---
 
-## Roadmap
 
-Sledim [Python Roadmap](https://roadmap.sh/python) za sistematično učenje.
 
-**Trenutno:** ✅ Sets & Dictionaries  
-**Naslednje:** Arrays and LInked Lists
+
+**Trenutno:** ✅ Data Structures  
+**Naslednje:** Data Structures 
