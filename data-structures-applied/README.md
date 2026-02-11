@@ -79,6 +79,41 @@ Hands-on learning for how data structures actually work in Python - not just how
 
 ---
 
+### Sets - Unique Collections (Feb 11, 2026)
+**Key discovery:** Sets combine dict-like speed with automatic uniqueness - perfect for comparisons and deduplication.
+
+**Experiments**:
+- Measured list vs set for finding unique items
+- Set was 2.4x faster with 1,000 items, gap widens with scale
+- Tested set operations: intersection (&), difference (-), union (|)
+* Discovered sets are often CLEARER than lists for certain tasks
+
+What I learned:
+1. Sets use hashing like dicts (O(1) membership check)
+2. Automatic duplicate removal - no manual `if item not in` needed
+3. Set operations make comparisons elegant and fast
+4. Only hashable items allowed (same rule as dict keys)
+
+When to use sets:
+* Need unique items only
+* Frequent membership checks ("is X in this collection?")
+* Comparing collections (what's new? what's common? what's different?)
+* Deduplication
+
+Real application: Budget tracker use cases:
+* Get unique categories in one line
+* Find new spending categories month-over-month
+* Identify untracked categories (no budget set)
+* Compare category coverage across time periods
+
+Hashability Rules (applies to both dict keys and set members):
+* ✓ Hashable: int, float, str, tuple (if contents hashable)
+* ✗ Not hashable: list, dict, set
+* Tuples: `(1, 2, 3)` works, `([1, 2], 3)` doesn't (list inside)
+* Rule: must be immutable at ALL levels
+
+Decision: When optimization improves clarity, it's not premature.
+
 ## Learning Principles
 
 1. **Measure, don't guess** - Run experiments
